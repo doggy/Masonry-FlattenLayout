@@ -20,24 +20,28 @@ Methods list:
 
     Provides a view based assignment method in flatten layout
     
-    `make.right.equalTill(view2)` is same as `make.right.equalTo(view2.mas_left)`
+    `make.right.equalTill(view2)` and `make.right.equalTo(view2.mas_left)` are equivalent.
     
     The magic of this mechanism work is .equalTill() will lookup the firstLayoutAttribute of contraint and deciding which secondLayoutAttribute should be.
     
-    Also, `make.top.equalTill(view2)` is same as `make.top.equalTo(view2.mas_bottom)`
+    Also, `make.top.equalTill(view2)` and `make.top.equalTo(view2.mas_bottom)` are equivalent.
 
 * New: gap()
 
     Not any more negative offset value. Transforming the gap value between two views to the layout offset is on-the-fly.
     
-    `make.right.equalTo(view2.mas_left).gap(10)` is same as `make.right.equalTo(view2.mas_left).offset(-10)`
+    `make.right.equalTo(view2.mas_left).gap(10)` and `make.right.equalTo(view2.mas_left).offset(-10)` are equivalent.
 
 # Conclusion
 Seen that? View based flatten layout gives you an easier life!
 
 You won't confusing which edge is need in relative layout and it autocompleted with equalTill()
 
-One more, combination the above (of course you can):
+One more, combination the above (of course you can)
+> make.right.equalTo(view2.mas_left).offset(-10)
+
+Now can be written to:
+
 > make.right.equalTill(view2).gap(10)
 
 # TODO
