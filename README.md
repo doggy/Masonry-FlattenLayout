@@ -1,7 +1,7 @@
 # Masonry-FlattenLayout
-Masonry is a good layout framework and this extension makes it better!
+Masonry is a pretty good framework of autolayout and this extension makes it better!
 
-More ergonomic thinkable and readable code with some new methods: .gap() .equalTill()
+More ergonomic thinkable and readable code by adding some new methods: .gap() .equalTill()
 
 # Hassle
 
