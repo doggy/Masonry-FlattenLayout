@@ -44,6 +44,18 @@ Now can be written to:
 
 > make.right.equalTill(view2).gap(10)
 
+# Installation
+Use the [orsome](http://www.youtube.com/watch?v=YaIZF8uUTtk) [CocoaPods](http://github.com/CocoaPods/CocoaPods).
+
+In your Podfile
+>`pod 'Masonry-FlattenLayout'`
+
+If you want to use masonry without all those pesky 'mas_' prefixes. Add #define MAS_SHORTHAND to your prefix.pch before importing Masonry
+>`#define MAS_SHORTHAND`
+
+Get busy Masoning
+>`#import "Masonry-FlattenLayout.h"`
+
 # TODO
 1. Send pull request to Masonry
 1. Support swift (SnapKit)
